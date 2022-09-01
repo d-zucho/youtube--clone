@@ -7,6 +7,8 @@ const Feed = () => {
     <Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
       {/* This means that usually it is a column, but at MEDIUM DEVICES and up, 
       it will be set to row */}
+
+      {/* For SIDEBAR component */}
       <Box
         sx={{
           height: { sx: 'auto', md: '92vh' },
@@ -21,6 +23,19 @@ const Feed = () => {
           sx={{ mt: 1.5, color: '#fff' }}
         >
           Copyright 2022 Zukko Media
+        </Typography>
+      </Box>
+
+      {/* For VIDEOLIST  */}
+      <Box>
+        <Typography variant='h4' fontWeight='bold' mb={2}>
+          <span
+            style={{
+              color: '#F31503',
+            }}
+          >
+            videos
+          </span>
         </Typography>
       </Box>
     </Stack>
